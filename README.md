@@ -42,7 +42,7 @@ Pour naviguer entre ces différentes cartes, on se comporte de la même manière
 Pour le **premier mode de jeu** : 'Suivre un scénario prédéfini', il faut s'assurer qu'un fichier txt dont le nom est de la forme 'instructions_nomDeLaCarte' est présent dans le dossier instructions.
 
 Ce fichier instructions comporte une ligne par robot présent sur la carte avec sur chaque ligne le nom du robot parmi DRONE, ROUES, PATTES et CHENILLES suivi des actions que le robot doit effectuer parmi N, S, E, O qui représentent une direction vers les 4 points cardinaux respectivement Nord, Sud, Est et Ouest. Deux autres actions possibles sont représentées par les lettres L et R respectivement pour largage et remplissage. Voici un exemple de ligne dans un fichier instructions :\
-DRONE,O,O,O,S,S,S,L,E,E,E,R,S,O,O,L,O,L,N,E,L
+**DRONE,O,O,O,S,S,S,L,E,E,E,R,S,O,O,L,O,L,N,E,L**
 
 Le **deuxième mode de jeu** permet à l'utilisateur de voir la propagation du vent. Il se joue comme le troisième mode de jeu mais à chaque appel de la méthode `next()`, le feu peut se propager, il est possible de modifier la difficulté du jeu avec le vent en modulant la difficulté de 1 à 3 (du plus facile au plus dur) ce qui influence la probabilité que le vent se propage.
 La chiffre à modifier se situe dans la classe choisir, dans la fonction lancer_jeu_vent (peut être trouvé à l'aide d'un CTRL+F) :\
